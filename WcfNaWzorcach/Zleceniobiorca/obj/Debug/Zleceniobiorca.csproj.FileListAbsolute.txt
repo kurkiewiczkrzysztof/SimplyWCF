@@ -1,0 +1,6 @@
+C:\Users\USER\Documents\Visual Studio 2013\Projects\WcfNaWzorcach\Zleceniobiorca\bin\Debug\Zleceniobiorca.exe.config
+C:\Users\USER\Documents\Visual Studio 2013\Projects\WcfNaWzorcach\Zleceniobiorca\bin\Debug\Zleceniobiorca.exe
+C:\Users\USER\Documents\Visual Studio 2013\Projects\WcfNaWzorcach\Zleceniobiorca\bin\Debug\Zleceniobiorca.pdb
+C:\Users\USER\Documents\Visual Studio 2013\Projects\WcfNaWzorcach\Zleceniobiorca\obj\Debug\Zleceniobiorca.exe
+C:\Users\USER\Documents\Visual Studio 2013\Projects\WcfNaWzorcach\Zleceniobiorca\obj\Debug\Zleceniobiorca.pdb
+C:\Users\USER\documents\visual studio 2013\Projects\WcfNaWzorcach\Zleceniobiorca\obj\Debug\Zleceniobiorca.csprojResolveAssemblyReference.cache

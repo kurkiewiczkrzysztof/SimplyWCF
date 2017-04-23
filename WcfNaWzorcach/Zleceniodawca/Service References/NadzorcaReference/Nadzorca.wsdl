@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Nadzorca" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:56869/Nadzorca.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:56869/Nadzorca.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:56869/Nadzorca.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfNaWzorcach" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="INadzorca_PobierzLicznik_InputMessage">
+    <wsdl:part name="parameters" element="tns:PobierzLicznik" />
+  </wsdl:message>
+  <wsdl:message name="INadzorca_PobierzLicznik_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PobierzLicznikResponse" />
+  </wsdl:message>
+  <wsdl:message name="INadzorca_WstawZlecenie_InputMessage">
+    <wsdl:part name="parameters" element="tns:WstawZlecenie" />
+  </wsdl:message>
+  <wsdl:message name="INadzorca_WstawZlecenie_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WstawZlecenieResponse" />
+  </wsdl:message>
+  <wsdl:message name="INadzorca_PobierzWynik_InputMessage">
+    <wsdl:part name="parameters" element="tns:PobierzWynik" />
+  </wsdl:message>
+  <wsdl:message name="INadzorca_PobierzWynik_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PobierzWynikResponse" />
+  </wsdl:message>
+  <wsdl:message name="INadzorca_PobierzZlecenie_InputMessage">
+    <wsdl:part name="parameters" element="tns:PobierzZlecenie" />
+  </wsdl:message>
+  <wsdl:message name="INadzorca_PobierzZlecenie_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PobierzZlecenieResponse" />
+  </wsdl:message>
+  <wsdl:message name="INadzorca_OddajWynikCzastkowy_InputMessage">
+    <wsdl:part name="parameters" element="tns:OddajWynikCzastkowy" />
+  </wsdl:message>
+  <wsdl:message name="INadzorca_OddajWynikCzastkowy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OddajWynikCzastkowyResponse" />
+  </wsdl:message>
+  <wsdl:portType name="INadzorca">
+    <wsdl:operation name="PobierzLicznik">
+      <wsdl:input wsaw:Action="http://tempuri.org/INadzorca/PobierzLicznik" message="tns:INadzorca_PobierzLicznik_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INadzorca/PobierzLicznikResponse" message="tns:INadzorca_PobierzLicznik_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WstawZlecenie">
+      <wsdl:input wsaw:Action="http://tempuri.org/INadzorca/WstawZlecenie" message="tns:INadzorca_WstawZlecenie_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INadzorca/WstawZlecenieResponse" message="tns:INadzorca_WstawZlecenie_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PobierzWynik">
+      <wsdl:input wsaw:Action="http://tempuri.org/INadzorca/PobierzWynik" message="tns:INadzorca_PobierzWynik_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INadzorca/PobierzWynikResponse" message="tns:INadzorca_PobierzWynik_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PobierzZlecenie">
+      <wsdl:input wsaw:Action="http://tempuri.org/INadzorca/PobierzZlecenie" message="tns:INadzorca_PobierzZlecenie_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INadzorca/PobierzZlecenieResponse" message="tns:INadzorca_PobierzZlecenie_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OddajWynikCzastkowy">
+      <wsdl:input wsaw:Action="http://tempuri.org/INadzorca/OddajWynikCzastkowy" message="tns:INadzorca_OddajWynikCzastkowy_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INadzorca/OddajWynikCzastkowyResponse" message="tns:INadzorca_OddajWynikCzastkowy_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_INadzorca" type="tns:INadzorca">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PobierzLicznik">
+      <soap:operation soapAction="http://tempuri.org/INadzorca/PobierzLicznik" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WstawZlecenie">
+      <soap:operation soapAction="http://tempuri.org/INadzorca/WstawZlecenie" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PobierzWynik">
+      <soap:operation soapAction="http://tempuri.org/INadzorca/PobierzWynik" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PobierzZlecenie">
+      <soap:operation soapAction="http://tempuri.org/INadzorca/PobierzZlecenie" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OddajWynikCzastkowy">
+      <soap:operation soapAction="http://tempuri.org/INadzorca/OddajWynikCzastkowy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Nadzorca">
+    <wsdl:port name="BasicHttpBinding_INadzorca" binding="tns:BasicHttpBinding_INadzorca">
+      <soap:address location="http://localhost:56869/Nadzorca.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

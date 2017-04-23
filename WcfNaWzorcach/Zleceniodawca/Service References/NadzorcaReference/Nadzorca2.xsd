@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfNaWzorcach" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfNaWzorcach" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Harmonogram">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="kosztCalkowity" type="xs:decimal" />
+      <xs:element minOccurs="0" name="listaZadan" nillable="true" type="tns:ArrayOfZadanie" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Harmonogram" nillable="true" type="tns:Harmonogram" />
+  <xs:complexType name="ArrayOfZadanie">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Zadanie" nillable="true" type="tns:Zadanie" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfZadanie" nillable="true" type="tns:ArrayOfZadanie" />
+  <xs:complexType name="Zadanie">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="_format" type="tns:Format" />
+      <xs:element minOccurs="0" name="_gatunek" type="tns:Gatunek" />
+      <xs:element minOccurs="0" name="_lD" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Zadanie" nillable="true" type="tns:Zadanie" />
+  <xs:simpleType name="Format">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Kolo" />
+      <xs:enumeration value="Kwadrat" />
+      <xs:enumeration value="Prostkoat" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Format" nillable="true" type="tns:Format" />
+  <xs:simpleType name="Gatunek">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="S03" />
+      <xs:enumeration value="S200" />
+      <xs:enumeration value="S1000" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Gatunek" nillable="true" type="tns:Gatunek" />
+</xs:schema>

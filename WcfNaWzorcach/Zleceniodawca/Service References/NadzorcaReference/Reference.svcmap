@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2c4fa338-7bc2-4bb5-b782-cada8224f8f1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:56869/Nadzorca.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Nadzorca.disco" MetadataType="Disco" ID="85eb5122-8f5a-41d9-bdd1-505aa4101c0b" SourceId="1" SourceUrl="http://localhost:56869/Nadzorca.svc?disco" />
+    <MetadataFile FileName="Nadzorca.xsd" MetadataType="Schema" ID="89394487-8ec4-415e-b88d-b3b5306d51b6" SourceId="1" SourceUrl="http://localhost:56869/Nadzorca.svc?xsd=xsd0" />
+    <MetadataFile FileName="Nadzorca2.xsd" MetadataType="Schema" ID="ba352d9f-d4bd-482e-ad8e-3c9c884c077c" SourceId="1" SourceUrl="http://localhost:56869/Nadzorca.svc?xsd=xsd2" />
+    <MetadataFile FileName="Nadzorca1.xsd" MetadataType="Schema" ID="8feb785c-3c28-45e2-a4bb-0f9e910e00b1" SourceId="1" SourceUrl="http://localhost:56869/Nadzorca.svc?xsd=xsd1" />
+    <MetadataFile FileName="Nadzorca.wsdl" MetadataType="Wsdl" ID="12667414-a948-46cd-bcf5-e76ee9f62b8d" SourceId="1" SourceUrl="http://localhost:56869/Nadzorca.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

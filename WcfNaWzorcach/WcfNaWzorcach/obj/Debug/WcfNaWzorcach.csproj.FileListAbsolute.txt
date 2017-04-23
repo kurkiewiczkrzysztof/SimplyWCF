@@ -1,0 +1,6 @@
+C:\Users\USER\Documents\Visual Studio 2013\Projects\WcfNaWzorcach\WcfNaWzorcach\bin\WcfNaWzorcach.dll.config
+C:\Users\USER\Documents\Visual Studio 2013\Projects\WcfNaWzorcach\WcfNaWzorcach\bin\WcfNaWzorcach.dll
+C:\Users\USER\Documents\Visual Studio 2013\Projects\WcfNaWzorcach\WcfNaWzorcach\bin\WcfNaWzorcach.pdb
+C:\Users\USER\Documents\Visual Studio 2013\Projects\WcfNaWzorcach\WcfNaWzorcach\obj\Debug\WcfNaWzorcach.dll
+C:\Users\USER\Documents\Visual Studio 2013\Projects\WcfNaWzorcach\WcfNaWzorcach\obj\Debug\WcfNaWzorcach.pdb
+C:\Users\USER\documents\visual studio 2013\Projects\WcfNaWzorcach\WcfNaWzorcach\obj\Debug\WcfNaWzorcach.csprojResolveAssemblyReference.cache

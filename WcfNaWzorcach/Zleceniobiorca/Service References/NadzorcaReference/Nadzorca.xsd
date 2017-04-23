@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:56869/Nadzorca.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfNaWzorcach" />
+  <xs:element name="PobierzLicznik">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PobierzLicznikResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PobierzLicznikResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WstawZlecenie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfNaWzorcach" minOccurs="0" name="h" nillable="true" type="q1:Harmonogram" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WstawZlecenieResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PobierzWynik">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PobierzWynikResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfNaWzorcach" minOccurs="0" name="PobierzWynikResult" nillable="true" type="q2:Harmonogram" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PobierzZlecenie">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PobierzZlecenieResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WcfNaWzorcach" minOccurs="0" name="PobierzZlecenieResult" nillable="true" type="q3:Harmonogram" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OddajWynikCzastkowy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WcfNaWzorcach" minOccurs="0" name="h" nillable="true" type="q4:Harmonogram" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OddajWynikCzastkowyResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
